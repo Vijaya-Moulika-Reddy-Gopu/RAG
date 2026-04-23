@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 # Load API key
 load_dotenv()
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 st.title("📄 RAG Chatbot - Student Assistant")
 
